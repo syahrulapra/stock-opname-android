@@ -10,12 +10,11 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.AppCompat"/>
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 

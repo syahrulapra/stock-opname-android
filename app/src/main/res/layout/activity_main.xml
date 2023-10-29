@@ -7,6 +7,35 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stock Opname"
+            android:textStyle="bold"
+            android:textSize="28dp"/>
+
+        <ImageButton
+
+            android:layout_margin="5dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/baseline_notifications_24"/>
+
+        <ImageButton
+            android:layout_margin="5dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/baseline_account_circle_24"/>
+
+    </LinearLayout>
+
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -65,7 +94,7 @@
             android:scrollbars="vertical"
             tools:listitem="@layout/activity_item"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="3"/>
+            app:spanCount="2"/>
     </LinearLayout>
 
 </LinearLayout>
