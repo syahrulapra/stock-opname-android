@@ -3,57 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottomsheetdialog"
+    android:padding="20dp">
+    
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/gambar"
+        android:padding="20dp"
+        android:adjustViewBounds="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/img_poster"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                tools:src="@drawable/gambar" />
-
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="34sp"
-                android:textStyle="bold"
-                android:padding="20dp"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="140dp"
-                android:textColor="@color/white"
-                android:text="Barang 1"/>
-
-        </FrameLayout>
-
         <TextView
-            android:id="@+id/tv_detail"
+            android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            :layout_marginBottom="8dp"
-            android:textSize="18sp"
-            android:justificationMode="inter_word"
-            android:text="Lorem Ipsum Sit amet dolor"/>
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:text="Barang 1"
+            android:textColor="@color/black"/>
 
-            <Button
-                android:id="@+id/btnPesan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:text="Pesan"/>
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:text="Lorem Ipsum Sit amet dolor"
+            android:layout_marginVertical="15dp"/>
+
+        <Button
+            android:id="@+id/btnKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="kategori"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:stateListAnimator="@null"
+            android:background="@drawable/bg_kategori"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnPesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:stateListAnimator="@null"
+            android:background="@drawable/bg_button"/>
 
     </LinearLayout>
 

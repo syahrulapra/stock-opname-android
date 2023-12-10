@@ -48,15 +48,13 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String email = etEmail.getText().toString();
-//                String password = etPassword.getText().toString();
-                String email = "syahrul@gmail.com";
-                String password = "admin123";
+                String email = etEmail.getText().toString();
+                String password = etPassword.getText().toString();
 
-//                if (etEmail.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {
-//                    Toast.makeText(LoginActivity.this, "Email dan Password harus di isi", Toast.LENGTH_SHORT).show();
-//                    return;
-//                }
+                if (etEmail.getText().toString().isEmpty() || etPassword.getText().toString().isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "Email dan Password harus di isi", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 User user = new User(null, email, password, null);
                 Call<ServerResponse> loginCall = mApiInterface.login(user);

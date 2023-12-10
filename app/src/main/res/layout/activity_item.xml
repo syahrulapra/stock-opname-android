@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:elevation="10dp"
         app:cardCornerRadius="10dp">
@@ -21,9 +21,11 @@
 
             <ImageView
                 android:id="@+id/iv_image"
-                android:layout_width=" "
-                android:layout_height="200dp"
-                tools:srcCompat="@drawable/gambar"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:srcCompat="@drawable/gambar"
+                android:adjustViewBounds="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,33 +38,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:textSize="24sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:layout_marginEnd="6dp"/>
-
-                <TextView
-                    android:id="@+id/tv_seri"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="24sp"
-                    android:textStyle="bold"/>
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="16sp"/>
-
-            <Button
-                android:id="@+id/bt_select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pilih Barang"
-                android:textStyle="bold"
+                android:text=""
                 android:textSize="12sp"/>
 
         </LinearLayout>

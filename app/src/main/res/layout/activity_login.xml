@@ -66,10 +66,10 @@
             <Button
                 android:id="@+id/bt_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:text="Login"
-                android:backgroundTint="#0e84c7"
-                android:paddingVertical="12dp"/>
+                android:background="@drawable/bg_button"
+                android:stateListAnimator="@null"/>
 
         </LinearLayout>
 
