@@ -16,10 +16,10 @@ public interface ApiInterface {
     @POST("auth/login")
     Call<ServerResponse> login(@Body User user);
 
-    @POST("autologin")
-    Call<ServerResponse> autoLogin(@Header("Authorization") String authorization);
+    @GET("auth/getuser")
+    Call<ServerResponse> getUser(@Header("Authorization") String authorization);
 
-    @POST("logout")
+    @POST("auth/logout")
     Call<ServerResponse> logout(@Header("Authorization") String accessToken);
 
     @GET("requester/category")

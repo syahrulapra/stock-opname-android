@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
-                User user = new User(null, email, password, null);
+                User user = new User(null, null, null, email, password, null);
                 Call<ServerResponse> loginCall = mApiInterface.login(user);
 
                 loginCall.enqueue(new Callback<ServerResponse>() {

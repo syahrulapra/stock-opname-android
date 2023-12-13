@@ -29,6 +29,7 @@
             android:background="@drawable/baseline_notifications_24" />
 
         <ImageButton
+            android:id="@+id/btnProfile"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="5dp"

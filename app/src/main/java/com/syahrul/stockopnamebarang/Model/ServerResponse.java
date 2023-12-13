@@ -6,13 +6,11 @@ public class ServerResponse {
     private String message;
     private String token;
     private User user;
-
     private List<Item> item;
 
     public User getUser() {
         return user;
     }
-
     public void setUser(User user) {
         this.user = user;
     }
