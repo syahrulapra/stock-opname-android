@@ -6,7 +6,7 @@ public class Warehouse {
     private String id_warehouse;
     private String name;
 
-    public Warehouse(String id_warehouse, String warehouse){
+    public Warehouse(String id_warehouse, String name){
         this.id_warehouse = id_warehouse;
         this.name = name;
     }
